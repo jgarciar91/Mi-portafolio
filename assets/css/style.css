@@ -1,0 +1,34 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.texto-logo {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+p{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+span {
+    font-weight: bold;
+} 
+
+header{
+    object-fit: cover;
+    width: 100%;
+    background-position: center;
+}
+
+.oscuro {
+    background: #000f08;
+    color: #ffffff;
+}
+
+.oscuro a{
+    color: #ffffff;
+    text-decoration: none;
+  }
