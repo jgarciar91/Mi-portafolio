@@ -1,8 +1,12 @@
 body{
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
-    background-color: blue;
+    background-color:#F3F7FF;
 
+}
+
+nav {
+    background-color:#002FD4;
 }
 
 .texto-logo {
@@ -10,19 +14,26 @@ body{
     font-size: 2rem;
 }
 
-p{
+p,{
     font-family: 'Josefin Sans', sans-serif;
+    color: #002FD4;
+}
+
+h3 {
+    color: #002FD4;
 }
 
 span {
     font-weight: bold;
 } 
 
-header{
-    object-fit: cover;
-    width: 100%;
+header {
+    background-image: url("../img/yo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-}
+    padding-bottom: 10rem;
+  }
 
 .oscuro {
     background: #000f08;
@@ -33,3 +44,11 @@ header{
     color: #ffffff;
     text-decoration: none;
   }
+
+.botocontacto {
+    color: #002FD4;
+}
+
+.logos {
+    width: 8rem;
+}
