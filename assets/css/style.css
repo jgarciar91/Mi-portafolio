@@ -5,27 +5,37 @@ body{
 
 }
 
+/* Menú */
 nav {
     background-color:#002FD4;
 }
+
+/* textos */
 
 .texto-logo {
     font-weight: 800;
     font-size: 2rem;
 }
 
-p,{
-    font-family: 'Josefin Sans', sans-serif;
+h3, h4, h5, .blue {
     color: #002FD4;
 }
 
 h3 {
-    color: #002FD4;
+    font-size: 3rem;
 }
 
-span {
-    font-weight: bold;
-} 
+p{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Destacado */
+.mark, mark {
+    padding: .2em;
+    background-color: #002FD4;
+    color: #ffffff;
+}
+/* Foto ppal */
 
 header {
     background-image: url("../img/yo.jpg");
@@ -33,10 +43,17 @@ header {
     background-size: cover;
     background-position: center;
     padding-bottom: 10rem;
+}
+
+hr {
+    background-color: #ffffff;
+    height: 2px;
+    width: 50px;
   }
 
+/* Clases */
+
 .oscuro {
-    background: #000f08;
     color: #ffffff;
 }
 
@@ -50,13 +67,22 @@ header {
 }
 
 .bgceleste{
-    background-color:#D9DFF7 ;
+    background-color:#DFE8F7 ;
 }
 
+/* Mi experiencia */
 .logos {
     width: 8rem;
 }
 
+.linea2 {
+    background-color: #002FD4;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+/* footer */
 footer i {
     margin: 0 0.25em 0.5em 0.25em;
     color: #ffffff;
@@ -67,3 +93,21 @@ footer i {
     margin-top: 4.5rem;
     background-color:#000783;
   }
+
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-position-x: ;
+    }
+
+.carousel-indicators {
+    top:50px;  
+    }
+
+.bgcarousel {
+    background-color: #0F0F70;
+
+}
+
+
