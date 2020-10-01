@@ -49,6 +49,21 @@ header {
     color: #002FD4;
 }
 
+.bgceleste{
+    background-color:#D9DFF7 ;
+}
+
 .logos {
     width: 8rem;
 }
+
+footer i {
+    margin: 0 0.25em 0.5em 0.25em;
+    color: #ffffff;
+  }
+
+  footer {
+    padding: 3.125rem;
+    margin-top: 4.5rem;
+    background-color:#000783;
+  }

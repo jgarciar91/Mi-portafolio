@@ -24,10 +24,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link text-white font-weight-light" href="#">Sobre mi</a>
-              <a class="nav-item nav-link text-white" href="#">Experiencia</a>
-              <a class="nav-item nav-link text-white" href="#">Trabajos</a>
-              <a class="nav-item nav-link text-white" href="#">Contacto</a>            
+              <a class="nav-item nav-link text-white font-weight-light" href="#sobremi">Sobre mi</a>
+              <a class="nav-item nav-link text-white" href="#miexperiencia">Experiencia</a>
+              <a class="nav-item nav-link text-white" href="#trabajos">Trabajos</a>
+              <a class="nav-item nav-link text-white" href="#contacto">Contacto</a>            
             </div>
           </div>
         </div>
@@ -36,18 +36,26 @@
 
 
     <!-- Hero section, img con texto sobre --> 
-    <header class="hero text-light text-right py-5 my-5 ">
+
+    
+    <header id="sobremi" class="hero text-light text-right py-5 my-5 ">
         <div class="container">
           <h2 class="display-5 font-weight-bold my-5 text-center">Javier García-huidobro</h2>
           <p class="my-5 text-center mx-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</p>
+
+          <button type="button" class="btn btn-light border rounded" data-toggle="tooltip" data-placement="bottom" title="Presiona para enviar a tu correo">Enviar por correo</button>
+          <button type="button" class="btn btn-light border rounded" data-toggle="tooltip" data-placement="right" title="Agrega esta receta a tus favoritos">Añadir a favoritos</button>
         </div>
       </header>
+
+       
+
+      
     
 
     <!-- Descripción, ocultar --> 
-    </section>
     <!-- 2 columnas: Ingredientes y Preparación (tiene border bottom) -->
-    <section class="contenido container mt-2 mb-5 pt-3 pb-md-5 d-none d-sm-none d-md-block d-lg-block">
+    <section  id="miexperiencia" class="contenido container mt-2 mb-5 pt-3 pb-md-5 d-none d-sm-none d-md-block d-lg-block">
         <h3 class="border-dark d-inline-block pb-2 font-weight-bold mb-4 text-center">Soy una persona creativa y responsable en los trabajos que emprendo.Estoy convencido que el trabajo en equipo es fundamental para lograr un buen resultado.</h3>
     <div class="row">
         <div class="col-sm-12 col-md-6  mb-5">
@@ -59,7 +67,7 @@
     </div>
     </section>
 
-    <!-- Mi experiencia --> 
+<!-- Mi experiencia --> 
     <section class="container text-center mb-5">
         <div class="font-weight-bold"><h2>Mi experiencia</h2></div>
     <div class="row mt-5">
@@ -81,10 +89,47 @@
       </div>
     </section>
 
-    <!-- Mis últimos trabajos --> 
+<!-- Carrusel -->
+<section class="container-fluid">
+    <div class="container py-5 d-none d-sm-none d-md-block d-lg-block pb-5 text-center bg-dark">
+        <div id="carrusel" class="carousel slide text-dark text-center" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carrusel" data-slide-to="0" class="active bg-dark"></li>
+            <li data-target="#carrusel" data-slide-to="1" class="bg-dark"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="assets/img/achs.png" alt="logo achs" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                  <img src="assets/img/corpartes.png" alt="logo Corpartes" class="img-fluid">
+                </div>
+              </div>
+            </div>
 
-<section class="container-fluid bg-dark py-3 mb-5 pb-5">
-    <div class="text-center text-white my-5"><h2>Mis últimos trabajos</h2></div>
+            <div class="carousel-item text-dark">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="assets/img/membrana.png" alt="logo membrana" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                  <img src="assets/img/achs.png" alt="logo achs" class="img-fluid">
+                </div>
+    
+              </div>  
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Mis últimos trabajos --> 
+
+<section id="trabajos" class="container-fluid bgceleste py-3 mb-5 pb-5">
+    <div class="text-center my-5 font-weight-bold"><h2>Mis últimos trabajos</h2></div>
     <div class="container Cuppon text-center">
         <div class="row">
             <div class="col-12 col-md-4 mb-4">
@@ -151,9 +196,11 @@
 
 </section>
 
+
+
     
     <!-- Contact, agregar typeform --> 
-    <section id="contac" class="container my-4">
+    <section id="contacto" class="container my-4">
 
         <h2 class="display-3 font-weight-bold text-center my-4">Contáctame</h2>
         <p class="text-center my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore neque obcaecati veritatis temporibus nemo dolores eaque laudantium voluptate exercitationem officiis, doloribus quod cum quo natus sed sint? Iure, recusandae dolor!</p>
@@ -165,28 +212,22 @@
 
     <!-- Footer --> 
 
-    <footer id="contacto" class="oscuro">
-        <a href="https://github.com"><i class="fab fa-github-square fa-5x"></i></a>
-        <a href="https://twitter.com"><i class="fab fa-twitter-square fa-5x"></i></a>
-        <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-5x"></i></a>
-        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                                   
+    <footer id="contacto" class=" text-center text-white">
         <p>Javier García-huidobro</p>
+        <a href="https://github.com" target="blank"><i class="fab fa-github-square fa-5x"></i></a>
+        <a href="https://twitter.com"target="blank"><i class="fab fa-twitter-square fa-5x"></i></a>
+        <a href="https://www.linkedin.com" target="blank"><i class="fab fa-linkedin fa-5x"></i></a>
     </footer>
   
 
+      <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-
-
-
-     <!-- jQuery-->
-     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-     <!-- Scripts de Bootstrap -->
-     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
- 
-     <!-- Mi Js-->
-     <script src="assets/js/scripts.js"></script>
+    <!-- Mi Js-->
+    <script src="assets/js/script.js"></script>
     
 </body>
 </html>
